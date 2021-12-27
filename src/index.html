@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Hello, World!</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="window">
+  <header class="portfolio__header">
+    <h1 class="project__name">Project portfolio</h1>
+    <nav class="portfolio__menu">
+      <a href="#about">About me</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contacts">Contacts</a>
+    </nav>
+    <button class="hamburger hamburger__menu hamburger__close"></button>
+  </header>
+  <main class="portfolio__main">
+    <section id="about" class="main__about main__section">
+      <h2>About me</h2>
+      <div>
+        <img src="images/jb_logo_footer.svg" alt="JebBrains" width="250" height="250">
+        <p>In this project I'm creating site-portfolio and learning additional technologies for frontend developing with JetBrainsAcademy.</p>
+      </div>
+    </section>
+
+    <section id="portfolio" class="main__portfolio main__section">
+      <h2>Portfolio</h2>
+      <div class="projects__wrapper">
+        <section>
+          <button id="flashcards" class="open-window">About Project</button>
+          <img src="images/project1.png" alt="Project 1" width="320" height="170">
+          <p>Flashcards</p>
+        </section>
+        <section>
+          <button id="virtual-piano" class="open-window">About Project</button>
+          <img src="images/project2.png" alt="Project 2" width="320" height="170">
+          <p>Virtual Piano</p>
+        </section>
+      </div>
+    </section>
+
+    <section id="contacts" class="main__contacts main__section">
+      <h2>Contacts</h2>
+      <p>Empty</p>
+    </section>
+  </main>
+
+  <footer class="portfolio__footer">
+    <p>Test footer</p>
+  </footer>
+  <section class="popup hidden-popup">
+    <p>Information in this area will be after ready all projects</p>
+    <button class="close-button">Close</button>
+  </section>
+  <script src="./scripts.js"></script>
+</body>
+</html>

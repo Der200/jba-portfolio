@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 20px;
+}
+
+h2 {
+}
+
+.portfolio__header, .portfolio__footer  {
+    background-color: #79a1c1;
+    height: 80px;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.portfolio__header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.portfolio__main {
+    padding: 0 20px;
+    padding-top: 100px;
+    width: 100%;
+}
+
+.portfolio__menu {
+    display: flex;
+}
+
+.portfolio__menu a {
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    padding: 27px;
+    margin: 0;
+    width: 170px;
+}
+
+.portfolio__menu a:hover {
+    background-color: rgba(0,0,193, 0.3);
+}
+
+.project__name {
+    height: 80px;
+    padding-top: 20px;
+    min-width: 230px;
+}
+
+.main__about div {
+    display: flex;
+}
+
+.main__section {
+    margin-bottom: 50px;
+}
+
+.projects__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projects__wrapper section {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    border: 1px solid #F5F5F5;
+    width: 500px;
+}
+
+.open-window {
+    height: 50px;
+    border: none;
+}
+
+.open-window:hover {
+    background-color: rgba(0,0,193, 0.3);
+}
+
+.open-window:active {
+    background-color: rgba(0,0,193, 0.4);
+    border-bottom: 1px solid rgba(0,0,193, 0.4);
+    border-right: 1px solid rgba(0,0,193, 0.4);
+}
+
+.popup {
+    width: 100%;
+    height: 300px;
+    position: fixed;
+    margin: 0 auto;
+    top: 200px;
+    text-align: center;
+    background-color: #F5F5F5;
+    border: 1px solid #F5F5F5;
+    border-radius: 15px;
+    padding: 10px;
+    padding-top: 100px;
+}
+
+.hidden-popup {
+    display: none;
+}
+
+.show-popup {
+    display: block;
+}
+
+.close-button {
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    background-color: #79a1c1;
+    border-radius: 5% 0 5% 0;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+
+.hamburger__close {
+    display: none;
+}
+
+.hamburger__open {
+    display: none;
+}
+
+@media (max-width: 780px) {
+    .portfolio__menu {
+        display: none;
+    }
+
+    .hamburger__menu {
+        display: block;
+        width: 50px;
+        height: 50px;
+        border: none;
+        cursor: pointer;
+        opacity: 0.6;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+    }
+
+    .hamburger__close {
+        background: url("./images/hamburger_menu.svg") no-repeat;
+    }
+
+    .hamburger__open {
+        background: url("./images/close.svg") no-repeat;
+    }
+
+    .hamburger__menu:hover {
+        opacity: 0.9;
+    }
+
+    .hamburger__menu:active {
+        opacity: 0.3;
+    }
+
+    .portfolio__menu--open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        height: 250px;
+        width: 160px;
+        right: 0px;
+        top: 80px;
+        background-color: #79a1c1;
+        justify-content: space-between;
+    }
+
+    .portfolio__menu a {
+        height: 150px;
+    }
+
+
+}
